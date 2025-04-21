@@ -26,34 +26,34 @@ export default {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         primary: {
-          DEFAULT: '#1967c6', // Trustworthy blue
-          dark: '#10447a',
-          foreground: '#fff'
+          DEFAULT: 'hsl(var(--primary))',
+          dark: 'hsl(var(--primary-dark))',
+          foreground: 'hsl(var(--primary-foreground))'
         },
         secondary: {
-          DEFAULT: '#fbc108', // Taxi yellow
-          dark: '#ba9004',
-          foreground: '#222'
+          DEFAULT: 'hsl(var(--secondary))',
+          dark: 'hsl(var(--secondary-dark))',
+          foreground: 'hsl(var(--secondary-foreground))'
         },
         accent: {
-          DEFAULT: '#1eaedb', // Bright blue accent (matches info colors)
-          foreground: '#fff'
+          DEFAULT: 'hsl(var(--accent))',
+          foreground: 'hsl(var(--accent-foreground))'
         },
         destructive: {
-          DEFAULT: '#e3342f',
-          foreground: '#fff'
+          DEFAULT: 'hsl(var(--destructive))',
+          foreground: 'hsl(var(--destructive-foreground))'
         },
         muted: {
-          DEFAULT: '#f1f1f1',
-          foreground: '#666'
+          DEFAULT: 'hsl(var(--muted))',
+          foreground: 'hsl(var(--muted-foreground))'
         },
         popover: {
-          DEFAULT: '#fff',
-          foreground: '#222'
+          DEFAULT: 'hsl(var(--popover))',
+          foreground: 'hsl(var(--popover-foreground))'
         },
         card: {
-          DEFAULT: '#fff',
-          foreground: '#333'
+          DEFAULT: 'hsl(var(--card))',
+          foreground: 'hsl(var(--card-foreground))'
         },
       },
       borderRadius: {
