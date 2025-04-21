@@ -1,8 +1,7 @@
-
 import { Link } from 'react-router-dom';
 import { ArrowRight, Car, Navigation, Users, Calendar, MapPin, Clock, CreditCard } from 'lucide-react';
 
-const LUXURY_GRADIENT = "bg-gradient-to-tr from-[#a18cd1] via-[#fdeff9] to-[#fbc2eb]";
+const LUXURY_GRADIENT = "bg-gradient-to-tr from-[#1967c6] via-[#fbc108] to-[#f1f1f1]";
 
 const Services = () => {
   return (
@@ -52,15 +51,14 @@ const Services = () => {
           <div className="glass-morphism bg-white/80 p-8 rounded-lg shadow-xl border border-gray-100 animate-fade-in">
             <h2 className="text-2xl font-semibold mb-6 text-primary">Our Fleet</h2>
             <p className="text-gray-700 mb-6">
-              Luxury and comfort, tailored for every journey. Choose from our premium fleet:
+              Choose the cab type for your needs:
             </p>
-            
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-              <VehicleCard type="Sedan" description="Perfect for 1-4 passengers – safe, quiet, and reliable for city or airport trips." />
-              <VehicleCard type="Prime Sedan" description="Premium sedans with added comfort for executives or special occasions." />
-              <VehicleCard type="SUV" description="Spacious, powerful SUV rides for families or heavy luggage; up to 6 passengers." />
-              <VehicleCard type="Innova" description="Toyota Innova – luxurious 6/7 seater, famous for highway and long outstation rides." />
-              <VehicleCard type="Tempo Traveller" description="Mini-bus (9-12 seats). Perfect for group travel – friends, family, or corporate teams." />
+              <VehicleCard type="Sedan" description="1–4 passengers – safe, quiet, and reliable for city or airport trips." />
+              <VehicleCard type="Prime Sedan" description="Executive comfort with added amenities for business or special rides." />
+              <VehicleCard type="SUV" description="Spacious rides for families or heavy luggage; up to 6 passengers." />
+              <VehicleCard type="Innova" description="Toyota Innova – popular 6/7 seater, perfect for highway and long tours." />
+              <VehicleCard type="Tempo Traveller" description="Mini-bus (9–12 seats), best for group travel with comfort." />
             </div>
           </div>
         </div>
@@ -93,12 +91,12 @@ const Services = () => {
       {/* CTA */}
       <section className="section-padding">
         <div className="container-custom">
-          <div className="glass-morphism bg-gradient-to-tr from-primary to-[#fbc2eb] text-secondary p-8 rounded-lg text-center animate-fade-in">
+          <div className="glass-morphism bg-gradient-to-tr from-primary to-[#fbc108] text-secondary p-8 rounded-lg text-center animate-fade-in">
             <h2 className="text-2xl font-semibold mb-4">Ready to Book Your Ride?</h2>
             <p className="text-lg mb-6">
-              Contact us today and enjoy genuine service and luxury rides across Karnataka.
+              Contact us today and enjoy safe, genuine service and comfortable rides across Karnataka.
             </p>
-            <Link to="/contact" className="bg-white text-primary hover:bg-gray-100 font-medium px-8 py-3 rounded-md transition-colors duration-200 inline-flex items-center justify-center hover-scale">
+            <Link to="/contact" className="bg-primary hover:bg-primary-dark text-white font-medium px-8 py-3 rounded-md transition-colors duration-200 inline-flex items-center justify-center hover-scale">
               Book Now
               <ArrowRight size={20} className="ml-2" />
             </Link>
@@ -111,13 +109,14 @@ const Services = () => {
         <div className="glass-morphism bg-yellow-50 p-6 rounded-lg text-center shadow flex flex-col items-center max-w-xl mx-auto animate-fade-in">
           <span className="text-xl font-semibold mb-2 text-primary">How does the owner receive booking info?</span>
           <p className="text-gray-700 mb-2">
-            Each booking/contact form is sent instantly to the owner by email or WhatsApp. <br />
+            Each booking/contact form is sent instantly to the owner’s WhatsApp or email.
+            <br />
             <span className="italic text-sm text-muted-foreground">
-              (Integrate with Gmail/WhatsApp API, or see all requests in the admin dashboard.)
+              (Integration with WhatsApp or Gmail as per owner’s choice.)
             </span>
           </p>
           <p className="text-xs text-muted-foreground">
-            Need this set up? Ask your developer to connect your form to your desired notification method.
+            Want this set up? Ask your developer to connect your form to your desired notification method.
           </p>
         </div>
       </section>
@@ -125,7 +124,6 @@ const Services = () => {
   );
 };
 
-// Animated, Luxury Card Styles
 const ServiceCard = ({ icon, title, description }) => (
   <div className="bg-white/90 glass-morphism p-6 rounded-lg shadow-lg border border-gray-100 hover:shadow-xl hover-scale transition-shadow duration-300 animate-fade-in">
     <div className="flex items-center mb-4">
@@ -152,4 +150,3 @@ const FeatureCard = ({ icon, title, description }) => (
 );
 
 export default Services;
-

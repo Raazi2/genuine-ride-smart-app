@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { PhoneCall, MessageSquare, CreditCard, MapPin, ChevronRight } from 'lucide-react';
@@ -40,13 +39,13 @@ const HeroSection = () => {
                 href="https://wa.me/919000000000?text=I'm%20interested%20in%20booking%20a%20cab"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#25D366] text-white hover:bg-[#128C7E] px-6 py-3 rounded-md font-medium flex items-center hover-scale"
+                className="bg-secondary text-primary hover:bg-yellow-400 px-6 py-3 rounded-md font-medium flex items-center hover-scale"
               >
                 <MessageSquare size={20} className="mr-2" />
                 Book on WhatsApp
               </a>
               
-              <Link to="/contact" className="bg-secondary text-white hover:bg-secondary/80 px-6 py-3 rounded-md font-medium flex items-center hover-scale">
+              <Link to="/contact" className="bg-primary text-white hover:bg-primary-dark px-6 py-3 rounded-md font-medium flex items-center hover-scale">
                 <CreditCard size={20} className="mr-2" />
                 Pay Online
               </Link>
@@ -64,9 +63,8 @@ const HeroSection = () => {
                   className={`w-full h-full object-cover transition-opacity duration-700 ${isImageLoaded ? 'opacity-100' : 'opacity-0'}`}
                   onLoad={() => setIsImageLoaded(true)}
                 />
-                <div className={`absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end ${isImageLoaded ? 'opacity-100' : 'opacity-0'}`}>
+                <div className={`absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end ${isImageLoaded ? 'opacity-100' : 'opacity-0'}`}>
                   <div className="p-6">
-                    <span className="px-3 py-1 bg-primary text-white rounded-full text-sm font-medium">Premium Service</span>
                     <h3 className="text-white text-xl font-bold mt-2">Explore Karnataka in Style</h3>
                   </div>
                 </div>
