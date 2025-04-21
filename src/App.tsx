@@ -9,8 +9,10 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
+import Admin from "./pages/Admin";
 import NotFound from "./pages/NotFound";
 
+// Create a client for React Query
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -27,6 +29,8 @@ const App = () => (
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Route>
+          {/* Admin route - separate from main layout */}
+          <Route path="/admin" element={<Admin />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
